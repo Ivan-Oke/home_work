@@ -1,0 +1,27 @@
+* {
+    box-sizing: content-box;
+}
+
+.block-1{
+    background: rgb(235, 226, 241);
+    overflow: auto;
+    border-radius: 15px 0px 0px 15px;
+    border: 3px solid black;
+    height:600px ;
+}
+.block-2{
+    display: inline-block;
+    width: 200px;
+    margin: 10px 20px 10px 10px;
+    border: 3px solid black;
+    padding: 0px 10px 0px;
+    border-radius: 15px;
+    background: rgb(198, 169, 102);
+    box-shadow: 7px 0px 37px 7px rgba(34, 60, 80, 0.53) inset;
+    width: 220px;
+    
+    
+}
+.block-3 {
+    max-width: 1200px;
+}
