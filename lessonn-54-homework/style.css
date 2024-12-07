@@ -1,0 +1,30 @@
+body {
+    background: black;
+    color: #fff;
+    font-size: 32px;
+}
+
+
+
+.block-1 {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    left: 50%;
+    min-height: 100px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+
+
+
+.Circle {
+    position: absolute;
+    top: -40px;
+    right: 510px;
+    height: 100px;
+    width: 100px;
+    background: red;
+    border-radius: 50%;
+}
