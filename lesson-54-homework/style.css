@@ -1,28 +1,30 @@
-body{
+body {
     background: black;
-}
-legend {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background: red;
-}
-fieldset {
-    background: #fff;
-    border-radius: 10px;
-    max-width: 50%;
-    margin-left: 50%;
-    margin-right: 50px;
-    min-height: 100px;
-    margin-bottom: 100px;
-}
-
-div {
     color: #fff;
     font-size: 32px;
-
 }
-.element{
-    position: sticky;
-    top: 550px;  
+
+
+
+.block-1 {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    left: 50%;
+    min-height: 100px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+
+
+
+.Circle {
+    position: absolute;
+    top: -40px;
+    right: 510px;
+    height: 100px;
+    width: 100px;
+    background: red;
+    border-radius: 50%;
 }
