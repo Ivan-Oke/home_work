@@ -1,0 +1,426 @@
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    color: var(--general-text);
+    background: var(--general-bg);
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+/* ... */
+
+.header {
+    background: url("../img/bg.jpeg") 50% 100% / cover no-repeat;
+}
+
+.header__top {
+    padding: 19px 10px 0;
+    max-width: 1799px;
+    margin: 0 auto;
+}
+
+.header__top-inner {
+    display: flex;
+    align-items: center;
+    min-width: 1799px;
+
+}
+
+.header__top_left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 101px;
+    margin-left: 43px;
+
+}
+
+.header__top_city {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.header__top-arrow {
+    margin-top: 15px;
+}
+
+.header__top-katalog {
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 200px;
+    width: 136px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header__top-katalog:hover {
+    background: rgb(244, 104, 63);
+    border: 1px solid rgb(244, 104, 63);
+}
+
+.header__top_middle {
+    display: flex;
+    gap: 10px;
+    margin-right: 101px;
+    flex-wrap: nowrap;
+
+}
+
+.header__top_right {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    cursor: pointer;
+}
+
+.header__top_love {
+    margin-right: 32px;
+}
+
+.header__top_lupa {
+    margin-right: 8px;
+}
+
+.header__top_telephone {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+}
+
+.header__logo {
+    max-width: 280px;
+
+}
+
+/* //////////// */
+
+
+
+
+
+.hero {
+    padding: 127px 0 0 0px;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+}
+
+.hero__content {
+    max-width: 680px;
+}
+
+
+.hero__title {
+    font-size: 60px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    max-width: 680px;
+
+}
+
+.hero__text {
+    max-width: 479px;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 91px;
+}
+
+/* ///////калькулятор */
+
+.hero__calculator {
+    margin-right: 90px;
+    height: 497px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    color: #1F1711;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.hero__calculator_block-one {
+    margin-top: 46px;
+}
+
+.hero__calculator_block-two {
+    margin-top: 12px;
+}
+
+.hero__calculator-range {
+    margin-top: -10px;
+}
+
+
+.hero__calculator-date {
+    color: #1F1711;
+    display: flex;
+    justify-content: space-around;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.hero__calculator-button {
+    box-sizing: border-box;
+    border: 1px solid rgb(192, 194, 215);
+    border-radius: 200px;
+    background: rgb(255, 255, 255);
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.hero__calculator-button input {
+    max-width: 50px;
+}
+
+.line {
+    width: 1px;
+    height: 35px;
+    background-color: #ccc;
+    margin: 5px auto;
+    position: absolute;
+    right: 50%;
+}
+
+.hero__calculator-quantity {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.hero__input-quantity {
+    box-sizing: border-box;
+    border: 1px solid rgb(192, 194, 215);
+    border-radius: 200px;
+    background: rgb(255, 255, 255);
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__input-quantity input {
+    margin-left: 20px;
+}
+
+
+
+.hero_button-search {
+    border-radius: 200px;
+    background: rgb(244, 104, 63);
+    width: 280px;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+/* ...............range */
+
+.slider-container {
+    width: 276px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.slider-track {
+    height: 2px;
+    background-color: #ccc;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slider-thumb {
+    width: 8px;
+    height: 20px;
+    background-color: #FF5733;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+}
+
+.left-thumb {
+    left: 0;
+}
+
+.right-thumb {
+    right: 0;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    position: relative;
+}
+
+.min-value,
+.max-value {
+    position: absolute;
+    top: 20px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.min-value {
+    left: 0;
+}
+
+.max-value {
+    right: 0;
+}
+
+/* ........слайдер */
+
+
+.gallery {
+    position: relative;
+}
+
+.swiper-wrapper {}
+
+.gallery-swiper {
+    width: 600px;
+}
+
+.gallery__link {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 240px;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+
+
+.gallery__btn {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    margin-top: -60px;
+    border: none;
+    outline: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background: none;
+}
+
+.title__paragraf {
+    margin-top: 10px;
+    text-align: center;
+    margin: 14px 38px 0px 0px;
+}
+
+.gallery__btn-prev {
+    left: -25px;
+}
+
+.gallery__btn-next {
+    right: 45px;
+}
+
+.swiper-button-disabled {
+    cursor: default;
+}
+
+.swiper-pagination-total {
+    opacity: .6;
+}
+
+/* ////////////////////// main-section*/
+
+.section {
+    background: url("../img/section.png") 100% 0% / auto 100% no-repeat, rgba(255, 255, 255, 0.592);
+    min-height: 100vh;
+}
+
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 180px;
+}
+
+.item {
+    padding: 20px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: rgb(51, 51, 51);
+}
+
+.item img {
+    margin-bottom: 22px;
+}
+
+.section_bloc-title {
+    color: rgb(51, 51, 51);
+    font-size: 40px;
+    font-weight: 800;
+    padding: 150px 0 77px;
+}
+
+
+
