@@ -91,3 +91,33 @@ function stopDragging() {
     document.removeEventListener('mouseup', stopDragging);
     document.removeEventListener('mouseleave', stopDragging);
 }
+
+// //////////////acardion
+
+const accordionItems = document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach(item => {
+  const header = item.querySelector(".accordion-item__header");
+  const content = item.querySelector(".accordion-item__content");
+  const toggle = item.querySelector(".accordion-item__toggle");
+
+  header.addEventListener("click", () => {
+    const isCurrentlyActive = item.classList.contains("active");
+
+    accordionItems.forEach(otherItem => {
+        if (otherItem !== item && otherItem.classList.contains("active")) {
+            otherItem.classList.remove("active");
+            const otherToggle = otherItem.querySelector(".accordion-item__toggle");
+            otherToggle.textContent = "+";
+        }
+    });
+
+    if (isCurrentlyActive) {
+      item.classList.remove("active");
+      toggle.textContent = "+";
+    } else {
+      item.classList.add("active");
+      toggle.textContent = "-";
+    }
+  });
+});

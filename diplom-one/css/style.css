@@ -1,10 +1,7 @@
-
-
 body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.5;
-    color: var(--general-text);
-    background: var(--general-bg);
+
 }
 
 .wrapper {
@@ -21,7 +18,7 @@ body {
 }
 
 .container {
-    max-width: 1320px;
+    max-width: 1430px;
     margin: 0 auto;
     padding: 0 15px;
     height: 100%;
@@ -42,16 +39,14 @@ body {
 .header__top-inner {
     display: flex;
     align-items: center;
-    min-width: 1799px;
-
+    flex-shrink: 0;
+    justify-content: space-between;
 }
 
 .header__top_left {
     display: flex;
     gap: 10px;
     align-items: center;
-    margin-right: 101px;
-    margin-left: 43px;
 
 }
 
@@ -86,9 +81,8 @@ body {
 .header__top_middle {
     display: flex;
     gap: 10px;
-    margin-right: 101px;
+    flex-shrink: 0;
     flex-wrap: nowrap;
-
 }
 
 .header__top_right {
@@ -96,6 +90,7 @@ body {
     align-items: center;
     gap: 31px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .header__top_love {
@@ -119,9 +114,6 @@ body {
 }
 
 /* //////////// */
-
-
-
 
 
 .hero {
@@ -322,7 +314,6 @@ body {
     position: relative;
 }
 
-.swiper-wrapper {}
 
 .gallery-swiper {
     width: 600px;
@@ -388,13 +379,17 @@ body {
 
 /* ////////////////////// main-section*/
 
-.section {
+
+
+.section-one {
     background: url("../img/section.png") 100% 0% / auto 100% no-repeat, rgba(255, 255, 255, 0.592);
-    min-height: 100vh;
+    max-width: 1799px;
+    margin: 0 auto;
+    min-height: 700px;
 }
 
 
-.container-grid {
+.section-container-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -422,5 +417,265 @@ body {
     padding: 150px 0 77px;
 }
 
+/* //////////section-two */
+.card_title {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 80px;
+    margin-top: -140px;
+}
 
 
+.card-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card {
+    max-width: 440px;
+}
+
+.card__image-container {
+    position: relative;
+}
+
+.card__badge {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    width: 92px;
+    height: 36px;
+    border-radius: 150px;
+    background: rgb(255, 255, 255);
+    color: rgb(114, 116, 136);
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card__badge-text {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.card__heart-button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 200px;
+    box-shadow: 0px 4px 20px 0px rgba(21, 22, 34, 0.2);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.card__content {
+    border-radius: 0 0 20px 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 80px 0px rgba(5, 9, 22, 0.08);
+}
+
+.card__title {
+    color: rgb(51, 51, 51);
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.5;
+
+}
+
+.card__feature {
+    color: rgb(114, 116, 136);
+    line-height: 1.5;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+
+.card__feature:first-child {
+    padding-top: 16px;
+    gap: 9px;
+}
+
+
+.card__feature:last-child {
+    padding-bottom: 27px;
+    padding-top: 5px;
+    gap: 9px;
+}
+
+.card__price-area {
+    display: flex;
+    gap: 66px;
+    margin: 0 auto;
+    max-width: 380px;
+
+}
+
+.card__price {
+    color: rgb(51, 51, 51);
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.5;
+    flex-shrink: 0;
+    padding-bottom: 40px;
+}
+
+.card__details-link {
+    color: rgb(244, 104, 63);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-top: 7px;
+}
+
+.card-knopka {
+    border-radius: 200px;
+    background: rgb(244, 104, 63);
+    width: 280px;
+    height: 50px;
+    margin: 80px auto 200px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* //////sectiom fre service */
+
+.service {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    grid-row-gap: 40px;
+
+}
+
+.service-card {
+    border-radius: 20px;
+    box-shadow: 0px 4px 80px 0px rgba(5, 9, 22, 0.08);
+    background: rgb(255, 255, 255);
+    max-width: 440px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: left;
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.service-card__icon {
+    margin-left: 22px;
+}
+
+.button-service {
+    margin: 60px auto 250px;
+    display: flex;
+    border-radius: 200px;
+    background: #f4683f;
+    width: 280px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* /////// main section-4 acardion */
+
+.accordion-container {
+    max-width: 1400px;
+    margin: 0 auto 250px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #333333;
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   border-style: solid none none none;
+}
+
+.accordion-item:first-child {
+    border-top: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+ }
+
+
+.accordion-item:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+
+
+.accordion-item:last-child{
+ border-bottom-right-radius: 5px;
+ border-bottom-left-radius: 5px;
+}
+
+
+.accordion-item__header {
+    background-color: #ffffff;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: -1px;
+}
+
+.accordion-item__question {
+    flex-grow: 1;
+    margin-right: 10px;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.accordion-item__toggle {
+    font-size: 1.5em;
+    border-radius: 200px;
+}
+
+
+.accordion-item__content {
+    padding: 15px;
+    display: none;
+    border-bottom: 1px solid #ccc; 
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: -1px;
+}
+
+.accordion-item.active:last-child .accordion-item__content {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-item.active:not(:last-child) .accordion-item__content{
+ border-bottom: none;
+}
+
+.accordion-item.active .accordion-item__content {
+    display: block;
+}
+/* /////////////section fiwe */
+
+
+ 
