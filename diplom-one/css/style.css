@@ -41,6 +41,7 @@ body {
     align-items: center;
     flex-shrink: 0;
     justify-content: space-between;
+    gap: 5px;
 }
 
 .header__top_left {
@@ -82,7 +83,7 @@ body {
     display: flex;
     gap: 10px;
     flex-shrink: 0;
-    flex-wrap: nowrap;
+
 }
 
 .header__top_right {
@@ -128,6 +129,8 @@ body {
 
 .hero__content {
     max-width: 680px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -609,14 +612,14 @@ body {
 .accordion-item {
     border: 1px solid #ccc;
     border-radius: 5px;
-   border-style: solid none none none;
+    border-style: solid none none none;
 }
 
 .accordion-item:first-child {
     border-top: none;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
- }
+}
 
 
 .accordion-item:not(:first-child):not(:last-child) {
@@ -624,9 +627,9 @@ body {
 }
 
 
-.accordion-item:last-child{
- border-bottom-right-radius: 5px;
- border-bottom-left-radius: 5px;
+.accordion-item:last-child {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 
@@ -656,7 +659,7 @@ body {
 .accordion-item__content {
     padding: 15px;
     display: none;
-    border-bottom: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc;
     color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 500;
@@ -665,17 +668,170 @@ body {
 }
 
 .accordion-item.active:last-child .accordion-item__content {
-  border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
-.accordion-item.active:not(:last-child) .accordion-item__content{
- border-bottom: none;
+.accordion-item.active:not(:last-child) .accordion-item__content {
+    border-bottom: none;
 }
 
 .accordion-item.active .accordion-item__content {
     display: block;
 }
+
 /* /////////////section fiwe */
 
+.proposal {
+    background: url(../img/footer-img/footer-img.png) 50% 0% / cover no-repeat;
+}
 
- 
+.rent-block {
+    padding: 233px 0px 482px 180px;
+}
+
+
+
+.rent-block__title {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.rent-block__description {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    margin-bottom: 70px;
+    width: 360px;
+}
+
+.rent-block__button {
+    border-radius: 200px;
+    background: #f4683f;
+    width: 260px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* ////////footer */
+
+.footer {
+    height: 350px;
+    background: #161723;
+}
+
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 82px;
+    padding: 0px 0 0 80px;
+}
+
+.footer__column-title {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 150%;
+    margin-bottom: 17px;
+}
+
+.footer__column_title {
+    color: rgb(192, 194, 215);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.footer__column-list {
+    color: rgb(192, 194, 215);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.footer__column_list {
+    color: rgb(64, 66, 86);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+
+.footer__logo {
+    margin-top: 82px;
+}
+
+.footer__social {
+    margin-top: 149px;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.footer__column_tel {
+    display: flex;
+    gap: 7px;
+    color: #c0c2d7;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-left: 60px;
+}
+
+/* ................................ */
+
+
+
+@media (max-width: 1220px) {
+    .header__logo {
+        max-width: 183px;
+    }
+
+    .header__top-inner {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        gap: 10px;
+    }
+
+    .header__top_love {
+        margin-right: 5px;
+    }
+
+    .header__top_right {
+        gap: 10px;
+    }
+
+    .hero__content {
+        margin: 0 300px 0;
+    }
+
+    .container__swiper {
+        display: none;
+    }
+
+    .hero__calculator {
+        display: none;
+    }
+
+   .hero__text {
+   width: 447px;
+   }
+}
