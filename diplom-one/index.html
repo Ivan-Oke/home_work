@@ -10,43 +10,69 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
     <div class="wrapper">
         <header class="header">
             <div class="header__top">
                 <div class="header__top-inner">
-                    <img class="header__logo" src="img/logo_light.png" alt="Логотип компании Wake & Bake">
-
-                    <div class="header__top_left">
-                        <div class="header__top_city">
-                            <img src="img/header/location.svg" alt="">
-                            Казань
-                            <img src="img/header/siti.svg" alt="">
+                    <a class="header__logo" href="#">
+                        <img src="img/logo_light.png" alt="Логотип компании Wake & Bake">
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    Информация для юр. лиц
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    Заявка на выездное обслуживание
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    Заявка на выездное обслуживание
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="nav-additional">
+                            <a>
+                                Сотрудничество
+                            </a>
+                            <a>
+                                Частые вопросы
+                            </a>
                         </div>
-                        <div class="header__top-katalog">
-                            Каталог
+                        <div class="nav-contact">
+                            <a href="#">8 (977) 705-94-99</a>
+                            <ul class="nav-list">
+                                <Li>
+                                    <a href=""><img src="img/footer-podval/youtube.svg" alt=""></a>
+                                </Li>
+                                <Li>
+                                    <a href=""><img src="img/footer-podval/inst.svg" alt=""></a>
+                                </Li>
+                                <Li>
+                                    <a href=""><img src="img/footer-podval/whatsapp.svg" alt=""></a>
+                                </Li>
+                                <Li>
+                                    <a href=""><img src="img/footer-podval/vk.svg" alt=""></a>
+                                </Li>
+                                <Li>
+                                    <a href=""><img src="img/footer-podval/telegram.svg" alt=""></a>
+                                </Li>
+                            </ul>
                         </div>
-                    </div>
-
-                    <div class="header__top_middle">
-                        <div>
-                            Частые вопросы
+                    </nav>
+                    <div class="contact-burger">
+                        <div class="nav_contackt-mobil">
+                            <a href=" tel:9777059499"><img src="img/header-mobil/telephone.svg" alt=""></a>
+                            <a href=""><img src="img/header-mobil/magnifier.svg" alt=""></a>
                         </div>
-                        <div>
-                            Сотрудничество
-                        </div>
-                    </div>
-
-                    <div class="header__top_right">
-                        <div>
-                            <img src="img/header/love.svg" alt="" class="header__top_love">
-                            <img src="img/header/lupa.svg" alt="" class="header__top_lupa">
-                            Поиск по названию
-                        </div>
-                        <div class="header__top_telephone">
-                            <img src="img/header/telephone.svg" alt="">
-                            8 (843) 528-65-48
-                        </div>
+                        <a class="burger-icon" href="#">
+                            <span></span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -586,53 +612,7 @@
         </main>
     </div>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__container">
-                <div class="footer__logo">
-                    <a href="#"><img src="img/footer-podval/logo_light.png" alt=""></a>
-                    <ul class="footer__column_list">
-                        <li style="margin-top: 119px;"><a href="#">Политика конфиденциальности</a></li>
-                        <li><a href="#">Согласие на обработку персональных данных</a></li>
-                    </ul>
-                </div>
-                <div class="footer__column">
-                    <h3 class="footer__column-title">Каталог</h3>
-                    <ul class="footer__column-list">
-                        <li style="margin-bottom: 12px;">С бассейном</li>
-                        <li style="margin-bottom: 12px;">Семейные и уютные</li>
-                        <li style="margin-bottom: 12px;">Хиты продаж</li>
-                        <li style="margin-bottom: 12px;">Под свадьбы и корпоративы</li>
-                        <li style="margin-bottom: 12px;">С русской баней на дровах</li>
-                    </ul>
-                </div>
-                <div class="footer__column">
-                    <h3 class="footer__column_title">Сотрудничество</h3>
-                    <ul class="footer__column-list">
-                        <li>Частые вопросы</li>
-                    </ul>
-                </div>
-                <div class="footer__column">
-                    <div class="footer__column_tel">
-                        <img src="img/footer-podval/lelephone.svg" alt="">
-                        <a href="#">8 (843) 528-65-48</a>
-                    </div>
-                    <ul class="footer__social">
-                        <li><a href="#"><img src="img/footer-podval/youtube.svg" alt=""><i
-                                    class="fab fa-youtube"></i></a></li>
-                        <li><a href="#"><img src="img/footer-podval/inst.svg" alt=""><i
-                                    class="fab fa-instagram"></i></a>
-                        </li>
-                        <li><a href="#"><img src="img/footer-podval/vk.svg" alt=""><i class="fab fa-vk"></i></a></li>
-                        <li><a href="#"><img src="img/footer-podval/whatsapp.svg" alt=""><i
-                                    class="fab fa-whatsapp"></i></a></li>
-                        <li><a href="#"><img src="img/footer-podval/telegram.svg" alt=""><i
-                                    class="fab fa-telegram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+
     </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/js.js"></script>
