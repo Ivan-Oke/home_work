@@ -630,6 +630,13 @@
     padding-bottom: 40px;
 }
 
+.card__price-mobil {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 800;
+    display: none;
+}
+
 .card__details-link {
     color: rgb(244, 104, 63);
     font-size: 16px;
@@ -647,16 +654,25 @@
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* //////sectiom fre service */
 
+.service-title {
+    color: #333333;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
 .service {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 40px;
-    grid-row-gap: 40px;
 
 }
 
@@ -664,7 +680,7 @@
     border-radius: 20px;
     box-shadow: 0px 4px 80px 0px rgba(5, 9, 22, 0.08);
     background: rgb(255, 255, 255);
-    max-width: 440px;
+    width: 440px;
     height: 130px;
     display: flex;
     align-items: center;
@@ -817,79 +833,7 @@
 
 /* ////////footer */
 
-.footer {
-    height: 350px;
-    background: #161723;
-}
 
-
-.footer__container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-}
-
-.footer__column {
-    display: flex;
-    flex-direction: column;
-    margin-top: 82px;
-    padding: 0px 0 0 80px;
-}
-
-.footer__column-title {
-    color: rgb(255, 255, 255);
-    font-size: 22px;
-    font-weight: 800;
-    line-height: 150%;
-    margin-bottom: 17px;
-}
-
-.footer__column_title {
-    color: rgb(192, 194, 215);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    margin-bottom: 12px;
-}
-
-.footer__column-list {
-    color: rgb(192, 194, 215);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    margin-bottom: 15px;
-}
-
-.footer__column_list {
-    color: rgb(64, 66, 86);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 150%;
-}
-
-
-.footer__logo {
-    margin-top: 82px;
-}
-
-.footer__social {
-    margin-top: 149px;
-    display: flex;
-    gap: 22px;
-    align-items: center;
-}
-
-.footer__column_tel {
-    display: flex;
-    gap: 7px;
-    color: #c0c2d7;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    margin-left: 60px;
-}
 
 /* ................................ */
 
@@ -897,16 +841,31 @@
 
 @media (max-width: 1430px) {
 
+    .card_title {
+        justify-content: center;
+        text-align: center;
+    }
+
     .card-inner {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 80px 80px;
     }
+
 
     .card-knopka {
         display: flex;
         align-items: center;
+        justify-content: center;
+    }
+
+    /* ////////////servis */
+    .service-title {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .service {
         justify-content: center;
     }
 }
@@ -1081,27 +1040,46 @@
     .hero__button-mobil {
         display: block;
     }
-/* ///////main section-1 */
 
-.section-container-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-auto-flow: column;
+    /* ///////main section-1 */
+
+    .section-container-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-auto-flow: column;
+    }
+
+
 }
 
+@media (max-width: 990px) {}
 
-}
+@media (max-width: 900px) {
 
-@media (max-width: 990px){
-    .card_title{
+    .service-title {
         display: flex;
         justify-content: center;
-        align-items: center;
     }
+
+    .service {
+        justify-content: center;
+    }
+
 }
 
-@media (max-width: 800px) {}
+@media (max-width: 800px){
+    .rent-block{
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 327px 0;
+    }
+
+}
 
 @media (max-width: 600px) {
     .hero {
@@ -1111,8 +1089,92 @@
     .hero__title {
         font-size: 12vw;
     }
+
     .hero__text-mobil {
         font-size: 5vw;
         min-width: 149px;
     }
+
 }
+
+@media (max-width: 500px) {
+
+    .card:nth-child(2) {
+display: none;
+    }
+    .card:nth-child(4) {
+display: none;
+    }
+    .card:nth-child(5) {
+display: none;
+    }
+
+    .card__image {
+        max-width: 320px;
+
+    }
+
+    .card__content {
+        max-width: 320px;
+        height: 142px;
+    }
+
+    .card__title {
+        margin-top: -20px;
+        margin-left: -20px;
+        margin-bottom: 18px;
+    }
+
+    .card__features {
+        display: none;
+    }
+
+    .card__price-area {
+        gap: 66px;
+        display: flex;
+        align-items: center;
+        margin-bottom: -20px;
+        margin-left: 20px;
+    }
+
+    .card__price {
+        display: none;
+    }
+
+    .card__price-mobil {
+        display: block;
+    }
+
+    .card__details-link {
+        color: #333333;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.5;
+        box-sizing: border-box;
+        border: 1px solid rgb(192, 194, 215);
+        border-radius: 200px;
+        background: #ffffff;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 26px;
+        
+    }
+
+    .card__heart-button {
+        left: 16px;
+        top: 20px;
+        width: 50px;
+        height: 50px;
+    }
+/* ////////proposal */
+
+.rent-block__title {
+    font-size: 8vw;
+}
+
+.rent-block__description {
+    font-size: 3vw;
+}
+
