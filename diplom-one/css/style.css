@@ -1059,7 +1059,7 @@
         inset: 0;
         z-index: 10;
         background: url(../img/bg.jpeg) 50% 100% / cover no-repeat;
-        padding: 26vh 15px 30px;
+        padding: 20vh 15px 0;
         transform: translateY(-50%);
         opacity: 0;
         visibility: hidden;
@@ -1111,6 +1111,7 @@
         align-items: center;
     }
 
+
     .nav-additional {
         display: flex;
         justify-content: center;
@@ -1121,7 +1122,7 @@
         font-size: 16px;
         font-weight: 600;
         line-height: 20px;
-        margin-bottom: 122px;
+        margin-bottom: 100px;
     }
 
     .nav-contact {
@@ -1155,7 +1156,7 @@
 
     }
 
-    .nav-list {
+    .nav-list-menu {
         display: flex;
         align-items: center;
         gap: 20px;
@@ -1164,14 +1165,14 @@
 
 
 
-    .nav-list li a {
+    .nav-list-menu li a {
         display: flex;
         align-items: center;
         justify-content: center;
         display: block;
     }
 
-    .nav-list li a img {
+    .nav-list-menu li a img {
         width: 100%;
         height: auto;
         display: block;
