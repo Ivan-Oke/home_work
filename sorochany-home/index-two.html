@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="booking_iframe" style="position: relative; padding-bottom: 30px;">
+        <div id="bn_iframe" style="font-family: 'Proxima nova', 'Helvetica Neue', 'Cera Pro Medium', Arial, Helvetica, sans-serif; position: absolute; right: 0; bottom: 0; font-size: 12px; line-height: 1em; opacity: .5; z-index: 10; margin-top: 10px;">
+            <div style="color: #1403fc!important; background: rgba(0, 0, 0, 0)!important;">
+                <a style="color: #808080!important; background: #fff!important;" href="https://bnovo.ru/bnovo-mb/?utm_source=client_modul_br" id="bnovo_link" target="_blank">Система управления отелем Bnovo ©</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://widget.reservationsteps.ru/iframe/library/dist/booking_iframe.js"></script>
+    <script src="js/main.js"></script> <!-- Path for your LOCAL js file, main.js-->
+    <script type="text/javascript">
+        (function () {
+            var BnovoBookFrame = new BookingIframe({
+                html_id: "booking_iframe",
+                uid: "308cdd3d-ab04-422e-a96b-285d0aacadea",
+                lang: "ru",
+                width: "auto",
+                height: "auto",
+                rooms: "",
+                isMobile: "0",
+                scroll_to_rooms: "0",
+            });
+            BnovoBookFrame.init();
+        })();
+    </script>
+</body>
+</html>
