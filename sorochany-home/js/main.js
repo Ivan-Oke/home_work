@@ -66,13 +66,6 @@ const cardSwiper = new Swiper('.card-swiper-container', {
 
 
 
-
-
-
-
-
-
-
 // ///akardion
 
 new Accordion('.accordion-container');
