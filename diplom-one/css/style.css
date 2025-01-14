@@ -166,7 +166,7 @@
     height: 3px;
     border-radius: 100px;
     background: #fff;
-    transition: 0s;
+    transition: 1s;
 }
 
 .burger-icon span {
@@ -356,8 +356,8 @@
 
 .hero__calculator-range {
     margin-top: -10px;
+    position: relative;
 }
-
 
 .hero__calculator-date {
     color: #1F1711;
@@ -428,6 +428,13 @@
     cursor: pointer;
 }
 
+.price-display {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    pointer-events: none;
+}
 
 /* ...............range */
 
@@ -554,7 +561,8 @@
     text-align: center;
     margin-bottom: 102px;
 }
-.selection-mobil-gallery{
+
+.selection-mobil-gallery {
     margin-bottom: 10px;
 }
 
@@ -762,84 +770,96 @@
 
 /* /////// main section-4 acardion */
 
-.accordion-container {
-    max-width: 1400px;
-    margin: 0 auto 150px;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 160%;
-    color: #333333;
+.main__program {
+    margin-bottom: 100px;
 }
 
-.accordion-item {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    border-style: solid none none none;
+.accordion-title {
+    color: black;
+    font-weight: 600;
+    font-size: 52px;
+    margin-bottom: 35px;
 }
 
-.accordion-item:first-child {
-    border-top: none;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.list {
+    margin: 0 0 40px;
+    padding: 0;
+    list-style-type: none;
 }
 
-
-.accordion-item:not(:first-child):not(:last-child) {
-    border-radius: 0;
-}
-
-
-.accordion-item:last-child {
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-
-.accordion-item__header {
-    background-color: #ffffff;
-    padding: 15px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    margin-bottom: -1px;
-}
-
-.accordion-item__question {
-    flex-grow: 1;
-    margin-right: 10px;
-    font-size: 22px;
-    font-weight: 800;
-    line-height: 150%;
-}
-
-.accordion-item__toggle {
-    font-size: 1.5em;
-    border-radius: 200px;
-}
-
-
-.accordion-item__content {
-    padding: 15px;
-    display: none;
-    border-bottom: 1px solid #ccc;
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.6;
+.list__item:not(:first-child) {
     margin-top: -1px;
 }
 
-.accordion-item.active:last-child .accordion-item__content {
-    border-bottom: 1px solid #ccc;
+
+
+.list__item .list__item-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    margin: 0;
+    align-items: center;
+    border: solid 1px transparent;
+    border-top-color: gray;
+    transition: border-color .5s, color .5s;
 }
 
-.accordion-item.active:not(:last-child) .accordion-item__content {
-    border-bottom: none;
+.list__item:first-child .list__item-title {
+    border-top-color: gray;
+    
+}
+.list__item-text {
+    border: solid 1px transparent;
+    border-bottom-color: gray;
 }
 
-.accordion-item.active .accordion-item__content {
+
+.list__item-icon {
+    margin-left: 20px;
     display: block;
+    flex-shrink: 0;
+    transition: transform .5s;
+    
 }
+
+
+.list__item-icon ellipse,
+.list__item-icon path {
+    transition: fill .5s;
+}
+
+.list__item .list__item-title .list__item-icon ellipse {
+    fill: hwb(0 100% 0%)
+}
+
+.list__item .list__item-title:hover .list__item-icon ellipse {
+    fill: hwb(0 79% 21%)
+}
+
+
+.list__item .list__item-title:hover .list__item-icon path {
+    fill: rgb(38, 37, 37)
+}
+
+.list__item .list__item-text {
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+}
+
+.ac .ac-trigger::after {
+    content: none;
+}
+
+.ac {
+    margin-top: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.is-active .list__item-icon {
+    transform: rotate(135deg);
+} 
 
 /* /////////////section fiwe */
 
@@ -1068,6 +1088,7 @@
         font-weight: 600;
         line-height: 1.5;
         display: block;
+        transition: all 1s ;
     }
 
     .nav__list {

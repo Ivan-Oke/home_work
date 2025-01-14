@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/accordion.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -587,91 +589,88 @@
             </section>
             <section class="main__program program">
                 <div class="container">
-                    <div class="accordion-container">
-                        <div class="accordion-item">
-                            <h3 class="accordion-item__header">
-                                <span class="accordion-item__question">Как происходит бронирование?</span>
-                                <span class="accordion-item__toggle">+</span>
+                    <h2 class="accordion-title">Частые вопросы</h2>
+                    <ul class="list accordion-container">
+                        <li class="list__item ac">
+                            <h3 class="list__item-title ac-header ac-trigger">
+                                Как происходит бронирование?
+                                <svg class="list__item-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="25" cy="25" rx="25" ry="25" fill="#CACACA" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                                    fill="black" />
+                            </svg>
                             </h3>
-                            <div class="accordion-item__content">
-                                <p>Бронирование происходит после внесения предоплаты 50% от суммы аренды, предварительно
-                                    можно приезать на осмотр дома или провести онлайн показ (при наличии такой
-                                    возможности)</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-item__header">
-                                <span class="accordion-item__question">Какая сумма предоплаты нужна?</span>
-                                <span class="accordion-item__toggle">+</span>
+                            <p class="list__item-text ac-panel">
+                                Бронирование происходит после внесения предоплаты 20% от суммы аренды.
+                            </p>
+                        </li>
+                        <li class="list__item ac">
+                            <h3 class="list__item-title ac-header ac-trigger">
+                                Как работаете с юр.лицами?
+                                <svg class="list__item-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="25" cy="25" rx="25" ry="25" fill="#CACACA" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                                        fill="black" />
+                                </svg>
                             </h3>
-                            <div class="accordion-item__content">
-                                <p>Стандарт предоплаты 50% от суммы аренды, если сумма аренды большая, то можно
-                                    уменьшить предоплату до 30%.</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-item__header">
-                                <span class="accordion-item__question">Можно ли разбить предоплату на несколько
-                                    частей?</span>
-                                <span class="accordion-item__toggle">+</span>
+                            <p class="list__item-text ac-panel">
+                                Работа с Юридическими лицами происходит по агентскому договору. Без учента НДС
+                            </p>
+                        </li>
+                        <li class="list__item ac">
+                            <h3 class="list__item-title ac-header ac-trigger">
+                                Можно ли приехать на просмотр?
+                                <svg class="list__item-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="25" cy="25" rx="25" ry="25" fill="#CACACA" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                                        fill="black" />
+                                </svg>
                             </h3>
-                            <div class="accordion-item__content">
-                                <p>Можно, по возможности можно сделать все. В каждом случае нужно общаться индивидуально
-                                    как с клиентом, так и с собственником</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-item__header">
-                                <span class="accordion-item__question">Как работаете с юр.лицами?</span>
-                                <span class="accordion-item__toggle">+</span>
+                            <p class="list__item-text ac-panel">
+                                Предварительно по соглосованию с менеджером, вы можете посмотреть дом.
+                            </p>
+                        </li>
+                        <li class="list__item ac">
+                            <h3 class="list__item-title ac-header ac-trigger">
+                                Какое время заезда и выезда в дом и есть ли возможность сдвинуть заезд или выезд?
+                                <svg class="list__item-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="25" cy="25" rx="25" ry="25" fill="#CACACA" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                                        fill="black" />
+                                </svg>
                             </h3>
-                            <div class="accordion-item__content">
-                                <p> У нас открыто ИП и мы можем предложить заключить с нами агентский договор, на
-                                    основании которого мы забронируем за Вами коттедж и пример оплату за дом на наш
-                                    расчётный счёт. Более детально уточняйте у менеджера.</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-item__header">
-                                <span class="accordion-item__question"> Можно ли приехать на просмотр?</span>
-                                <span class="accordion-item__toggle">+</span>
+                            <p class="list__item-text ac-panel">
+                                Стандартный заезд в 15:00, выезд в 12:00 следующего дня. Пролонгировать время пребывания
+                                возможно, предварительно соглосовав с менеджером. Дополнительное время оплачивается
+                                отдельно
+                            </p>
+                        </li>
+                        <li class="list__item ac">
+                            <h3 class="list__item-title ac-header ac-trigger">
+                                Зачем нужен залог?
+                                <svg class="list__item-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="25" cy="25" rx="25" ry="25" fill="#CACACA" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                                        fill="black" />
+                                </svg>
                             </h3>
-                            <div class="accordion-item__content">
-                                <p> Да, любой дом можно посмотреть.</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-item__header">
-                                <span class="accordion-item__question"> Какое время заезда и выезда в дом и есть ли
-                                    возможность сдвинуть заезд или выезд?</span>
-                                <span class="accordion-item__toggle">+</span>
-                            </h3>
-                            <div class="accordion-item__content">
-                                <p>У каждого дома свой фиксированный заезд и выезд (указано в карточке товара), сдвинуть
-                                    сроки реально, нужно обговаривать индивидуально.</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-item__header">
-                                <span class="accordion-item__question"> Зачем нужен залог?</span>
-                                <span class="accordion-item__toggle">+</span>
-                            </h3>
-                            <div class="accordion-item__content">
-                                <p>Залог берётся администрацией коттеджа только во время заселения в дом и возвращается
-                                    при выезде из коттеджа. Сумма залога и штраф лист указаны в договоре аренды. </p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-item__header">
-                                <span class="accordion-item__question">Сколько стоят в Ваши услуги?</span>
-                                <span class="accordion-item__toggle">+</span>
-                            </h3>
-                            <div class="accordion-item__content">
-                                <p> Мы находимся с цене собственника и получаем комиссию только после вашего отдыха. Мы
-                                    не накручиваем больше от цены и отдельно нам Вы ничего не платите.</p>
-                            </div>
-                        </div>
-                    </div>
+                            <p class="list__item-text ac-panel">
+                                Залог берётся во время заселения,и возвращается при
+                                выезде. Сумма залога и штрафа указаны в договоре аренды. В случае утраты имущества залог
+                                не возвращается.
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="proposal">
@@ -698,7 +697,7 @@
                         <div class="footer-siti-mobil">
                             <img src="img/header/location.svg" alt="">
                             Казань
-                        <img src="img/header/siti.svg" alt="">
+                            <img src="img/header/siti.svg" alt="">
                         </div>
                         <div class="footer_privacy-block">
                             <div>
@@ -797,6 +796,7 @@
 
     </div>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/accordion.min.js"></script>
     <script src="js/js.js"></script>
 </body>
 

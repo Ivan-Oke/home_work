@@ -49,7 +49,8 @@ function moveLeftThumb(e) {
     } else if (newLeft > currentRightPos - 8) {
         newLeft = currentRightPos - 8;
     }
-    updateThumbAndValue(leftThumb, minValueLabel, newLeft);
+    updateThumbPosition(leftThumb, newLeft);
+    updatePrice(minValueLabel, newLeft);
 }
 
 function moveRightThumb(e) {
@@ -60,19 +61,20 @@ function moveRightThumb(e) {
     } else if (newRight < currentLeftPos) {
         newRight = currentLeftPos;
     }
-    updateThumbAndValue(rightThumb, maxValueLabel, newRight);
+    updateThumbPosition(rightThumb, newRight);
+    updatePrice(maxValueLabel, newRight)
 }
 
-function updateThumbAndValue(thumb, label, newPos) {
+function updateThumbPosition(thumb, newPos) {
     thumb.style.left = newPos + "px";
-    label.style.left = newPos + 'px';
+}
+
+
+function updatePrice(label, newPos) {
 
     const percent = newPos / (trackWidth - 8);
     let newValue = Math.round(percent * 150000);
-    
-    // Calculate value with step of 500
     newValue = Math.round(newValue / 500) * 500;
-    
     label.textContent = newValue + " ₽";
 }
 
@@ -94,40 +96,37 @@ function stopDragging() {
 
 // //////////////acardion
 
-const accordionItems = document.querySelectorAll(".accordion-item");
+document.addEventListener('DOMContentLoaded', function () {
+    const accordionItems = document.querySelectorAll('.accordion-item');
 
-accordionItems.forEach(item => {
-  const header = item.querySelector(".accordion-item__header");
-  const content = item.querySelector(".accordion-item__content");
-  const toggle = item.querySelector(".accordion-item__toggle");
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-item__header');
+        const toggle = item.querySelector('.accordion-item__toggle'); // Get the toggle element
 
-  header.addEventListener("click", () => {
-    const isCurrentlyActive = item.classList.contains("active");
+        header.addEventListener('click', () => {
+            item.classList.toggle('active');
 
-    accordionItems.forEach(otherItem => {
-        if (otherItem !== item && otherItem.classList.contains("active")) {
-            otherItem.classList.remove("active");
-            const otherToggle = otherItem.querySelector(".accordion-item__toggle");
-            otherToggle.textContent = "+";
-        }
+            // Toggle the toggle symbol
+            if (item.classList.contains('active')) {
+                toggle.textContent = '-';
+            } else {
+                toggle.textContent = '+';
+            }
+        });
     });
-
-    if (isCurrentlyActive) {
-      item.classList.remove("active");
-      toggle.textContent = "+";
-    } else {
-      item.classList.add("active");
-      toggle.textContent = "-";
-    }
-  });
 });
 
-(function() {
-    
+
+// ///akardion
+
+new Accordion('.accordion-container');
+// ..........бургер
+(function () {
+
     document.addEventListener('click', burgerInit)
 
     function burgerInit(e) {
-        
+
         const burgerIcon = e.target.closest('.burger-icon')
         const burgerNavLink = e.target.closest('.nav__link')
 
