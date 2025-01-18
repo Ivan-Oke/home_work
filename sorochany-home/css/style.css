@@ -57,7 +57,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 19px;
+    padding: 22px 10px 10px 30px;
+    margin-bottom: 20px;
 }
 
 .header__logo {
@@ -68,19 +69,26 @@
 
 .hero-img {
     position: absolute;
-    max-width: 85px;
+    max-width: 60px;
+}
 
+.hero-img-fir {
+    max-width: 37px;
+    position: relative;
+    left: 12px;
+    bottom: 4px;
 }
 
 .hero-logo_text {
     position: relative;
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 900;
     color: rgb(0, 0, 0);
-    right: 20px;
-    bottom: 1px;
+    right: 69px;
+    top: 32px;
     font-family: "Great Vibes", serif;
     text-shadow: 1px 1px 1px #ffffff;
+    flex-shrink: 0;
 }
 
 
@@ -122,6 +130,10 @@
     opacity: 1;
 }
 
+.menu {
+    display: none;
+}
+
 .burger-icon {
     display: none;
     width: 50px;
@@ -135,8 +147,8 @@
 .burger-icon span::before,
 .burger-icon span::after {
     display: block;
-    width: 30px;
-    height: 3px;
+    width: 35px;
+    height: 4px;
     border-radius: 100px;
     background: #000000;
     transition: var(--transition);
@@ -153,11 +165,11 @@
 }
 
 .burger-icon span::before {
-    top: -8px;
+    top: -10px;
 }
 
 .burger-icon span::after {
-    bottom: -8px;
+    bottom: -10px;
 }
 
 .body--opened-menu .burger-icon span {
@@ -172,6 +184,14 @@
 .body--opened-menu .burger-icon span::after {
     bottom: 0px;
     transform: rotate(-45deg);
+}
+
+.menu-whatsapp {
+    max-width: 40px;
+}
+
+.menu-telephone {
+    max-width: 30px;
 }
 
 /* ========================================================= */
@@ -675,29 +695,8 @@
     align-items: center;
 }
 
-.header__logo {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 15px;
-}
 
-.hero-img {
-    position: absolute;
-    max-width: 85px;
 
-}
-
-.hero-logo_text {
-    position: relative;
-    font-size: 32px;
-    font-weight: 900;
-    color: rgb(0, 0, 0);
-    right: 20px;
-    bottom: 1px;
-    font-family: "Great Vibes", serif;
-    text-shadow: 1px 1px 1px #ffffff;
-}
 
 .open-modal-btn {
     background: none;
@@ -821,6 +820,14 @@
 }
 
 @media (max-width: 900px) {
+
+    .menu {
+        display: block;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
     .nav {
         position: fixed;
         inset: 0;
