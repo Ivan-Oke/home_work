@@ -19,12 +19,10 @@
     }
 
 })()
-
+// ........
 
 const swiper = new Swiper('.swiper-container', {
-    // Цикличность
     loop: true,
-    // Пагинация
     pagination: {
         el: '.swiper-pagination',
         clickable: true
@@ -36,30 +34,17 @@ const swiper = new Swiper('.swiper-container', {
         delay: 3000,
         disableOnInteraction: false,
     },
-    // Navigation Arrows (added without touching anything else)
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    speed: 100,  // Set the transition speed to 1500 milliseconds (1.5 seconds)
-    effect: 'fade', // You can also try other effects such as 'slide', 'cube', 'coverflow', or 'flip'
+    speed: 1000,
     fadeEffect: {
         crossFade: true
     },
 });
 
-
-
-const cardSwiper = new Swiper('.card-swiper-container', {
-    loop: true,
-    pagination: {
-        el: '.card-swiper-pagination',
-        clickable: true
-    },
-    a11y: {
-        paginationBulletMessage: 'Тут название слайда {{index}}',
-    },
-});
+// ...............................
 
 
 // ///akardion
@@ -68,9 +53,8 @@ new Accordion('.accordion-container');
 
 // /footer
 
-
 document.querySelectorAll(".open-modal-btn").forEach(button => {
-    button.addEventListener("click", function() {
+    button.addEventListener("click", function () {
         const modalId = this.dataset.modal;
         document.getElementById(modalId).classList.add("open");
     });
@@ -78,29 +62,32 @@ document.querySelectorAll(".open-modal-btn").forEach(button => {
 
 
 document.querySelectorAll(".close-my-modal-btn").forEach(button => {
-  button.addEventListener("click", function(event) {
-    event.target.closest(".modal").classList.remove("open"); 
-  });
+    button.addEventListener("click", function (event) {
+        event.target.closest(".modal").classList.remove("open");
+    });
 });
 
 
 window.addEventListener('keydown', (e) => {
     if (e.key === "Escape") {
-        document.querySelectorAll(".modal.open").forEach(modal => { 
+        document.querySelectorAll(".modal.open").forEach(modal => {
             modal.classList.remove("open");
         });
     }
 });
 
-
 document.querySelectorAll(".modal .modal__box").forEach(modalBox => {
-  modalBox.addEventListener('click', event => {
-    event._isClickWithInModal = true;
-  });
+    modalBox.addEventListener('click', event => {
+        event._isClickWithInModal = true;
+    });
 });
 document.querySelectorAll(".modal").forEach(modal => {
-  modal.addEventListener('click', event => {
-    if (event._isClickWithInModal) return;
-    event.currentTarget.classList.remove('open');
-  });
+    modal.addEventListener('click', event => {
+        if (event._isClickWithInModal) return;
+        event.currentTarget.classList.remove('open');
+    });
 });
+
+
+// ......
+
