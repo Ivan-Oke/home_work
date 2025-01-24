@@ -1,11 +1,4 @@
-:root {
-    --general-text: #312C27;
-    --accent-text: #1F1711;
-    --general-bg: #FFF9F4;
-    --accent-bg: #FFE0CB;
-    --accent-color: #FFA55C;
-    --transition: all .4s;
-}
+
 
 .body {
     font-family: "Montserrat", "Arial", sans-serif;
@@ -57,36 +50,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 22px 10px 10px 30px;
-    margin-bottom: 20px;
+    padding: 7px 10px 0px 10px;
 }
 
 .header__logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 5px;
-    z-index: 12;
 }
 
-.hero-img {
-    position: absolute;
-    max-width: 60px;
+.header__logo-img {
+    max-width: 54px;
 }
 
-.hero-img-fir {
-    max-width: 37px;
-    position: relative;
-    left: 12px;
-    bottom: 4px;
-}
 
 .hero-logo_text {
-    position: relative;
+    margin-top: -10px;
     font-size: 25px;
     font-weight: 900;
-    color: rgb(0, 0, 0);
-    right: 69px;
-    top: 32px;
+    color: #000000;
     font-family: "Great Vibes", serif;
     text-shadow: 1px 1px 1px #ffffff;
     flex-shrink: 0;
@@ -716,47 +698,31 @@
 
 .footer__logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 5px;
-    z-index: 12;
-    margin-bottom: 30px;
-    justify-content: center;
 }
 
-.footer-img {
-    position: absolute;
-    max-width: 60px;
+.footer__logo-img {
+    max-width: 54px;
 }
 
-.footer-img-fir {
-    max-width: 37px;
-    position: relative;
-    left: 52px;
-    bottom: 4px;
-}
 
 .footer-logo_text {
-    position: relative;
+    margin-top: -10px;
     font-size: 25px;
     font-weight: 900;
-    color: rgb(0, 0, 0);
-    right: 30px;
-    top: 32px;
+    color: #000000;
     font-family: "Great Vibes", serif;
     text-shadow: 1px 1px 1px #ffffff;
     flex-shrink: 0;
 }
 
-.footer-telephone {
-    display: flex;
-    justify-content: center;
-    color: #000;
-}
 
 .telephone {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: black;
 }
 
 .footer-telephone-link {
@@ -1084,6 +1050,7 @@
     .services-main_title {
         font-size: 32px;
     }
+
     /* ////rules */
     .rules-title {
         font-size: 32px;
@@ -1093,20 +1060,22 @@
     .rules-grid {
         margin-bottom: 30px;
     }
-/* ////akardion */ 
-.accordion-title {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-/* //////carta */
-.map-title {
-    font-size: 32px;
-    margin-bottom: 5px;
-}
 
-.map-text {
-    margin-bottom: 2px;
-}
+    /* ////akardion */
+    .accordion-title {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    /* //////carta */
+    .map-title {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .map-text {
+        margin-bottom: 2px;
+    }
 
 }
 
