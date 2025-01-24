@@ -61,6 +61,7 @@
 
 .header__logo-img {
     max-width: 54px;
+    height: auto;
 }
 
 
@@ -703,6 +704,7 @@
 }
 
 .footer__logo-img {
+    height: auto;
     max-width: 54px;
 }
 
